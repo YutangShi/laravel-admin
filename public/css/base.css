@@ -1,0 +1,154 @@
+.navbar {
+	border: none;
+    box-shadow: none;
+}
+
+.btn-default{
+	text-shadow: none;
+    border: none;
+	border-radius: 0;
+    background: #61a93e;
+	color:#fff;
+}
+
+.glyphicon:before{ color:#61a93e;}
+
+.menu_bar>li>a{
+	line-height:40px;
+	font-weight: 700;
+	margin:0 8px;
+}
+
+.logo{
+	background: url(../images/hanyou.png)left center no-repeat;
+	background-size:contain;
+	width:150px;
+	height:70px;
+	margin-right:30px;
+}
+
+.logo h1{ text-indent:-9999em;}
+
+header { 
+	border:#f5f5f5 solid 1px;
+	background-color:#EEE8CD;	/*#fff*/
+	opacity: 0.95;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.mainmenu { padding:0;}
+.menu_bar>li>a{
+	border-bottom: 3px solid transparent;
+	padding: 13px 15px;
+}
+.menu_bar>li>a:hover{
+	border-bottom: 3px solid #125400;
+    padding: 13px 15px;
+}
+
+.language{ 
+	margin:21px 0;
+	margin-left:15px;
+}
+.language>li{
+	border: 1px solid #ccc;
+	margin-left:5px;
+	width: 25px;
+	height:25px;
+	float:left;
+}
+.language>li>a{ 
+    line-height: 24px;
+    padding: 0;
+	color:#777;
+}
+.language>li>a:hover{
+	color: #fcf8e3;
+    background-color: #266e1a;
+}
+
+.section1{ 
+	padding: 0;
+	margin-top:70px;
+	height:300px;
+}
+.section2{	padding: 40px 0;}
+.section3{
+	padding: 35px 0;
+    background-color: #61a93e;
+}
+.section3 h4.title{	
+	color:#fff;
+	padding-left: 10px;
+}
+.section4{	padding: 60px 0;}
+h4.title{	padding-bottom: 8px;}
+
+.news_box{	position: relative;}
+.news_box a{    
+	display: block;
+    padding: 2px 10px;	
+	color:#fff;
+}
+.news_box:hover a,.news_box:hover .pub_date{
+	background-color:#f5f5f5;
+	color:#333;	
+}
+.news_box .title{
+	width: 85%;
+    height: 1.1em;
+    overflow: hidden;
+}
+
+.news_box .pub_date {
+    display: inline-block;
+    width: 70px;
+	color:#fff;
+}
+
+.news_box .more{
+	position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.box1{ position:relative;}
+.box1 .img{ 
+	margin-bottom:15px;
+	height: 175px;
+    overflow: hidden;
+}
+.box1 .title{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 264px;
+    background-color: #ea8a26;
+    color: #fff;
+    height: 25px;
+    line-height: 4px;
+    padding: 11px 15px;
+	margin:0;
+}
+.box1 .txt{
+	height: 44px;
+    overflow: hidden;
+}
+.box1 .tag>span{ margin-right: 10px;}
+
+.footer_menu{
+	background-color: #fcfaf6;
+	border-top: 1px solid #f5f5f5;
+	padding: 10px 0;
+}
+
+footer{
+	color:#fcfaf6;
+	background-color: #232021;
+}
+
+

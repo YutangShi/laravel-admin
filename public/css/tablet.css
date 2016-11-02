@@ -1,0 +1,8 @@
+@media (min-width: 768px) and (max-width: 991px) {
+.menu_bar{ width:100%;}
+.menu_bar>li>a { 
+	margin: 0;
+	padding: 10px 30px;
+}
+.section1{	margin-top:132px;}
+}

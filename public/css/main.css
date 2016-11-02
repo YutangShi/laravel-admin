@@ -1,0 +1,3 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+.menu_bar>li>a { margin: 0;}
+}
