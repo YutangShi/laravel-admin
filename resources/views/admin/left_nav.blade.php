@@ -53,18 +53,34 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="/admin/about"><i class="fa fa-circle-o"></i> 關於我們</a></li>
-                <li><a href="/admin/news"><i class="fa fa-circle-o"></i> 最新消息</a></li>
                 <li><a href="/admin/contact"><i class="fa fa-circle-o"></i> 聯絡我們</a></li>
-                <li><a href="/admin/contact"><i class="fa fa-circle-o"></i> 相關連結</a></li>
               </ul>
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-table"></i> <span>相關報導</span>
+                <i class="fa fa-table"></i> <span>首頁圖檔</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/admin/report"><i class="fa fa-circle-o"></i> 相關報導</a></li>
+                <li><a href="/admin/banners"><i class="fa fa-circle-o"></i> 首頁圖檔</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-table"></i> <span>最新消息</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/admin/news"><i class="fa fa-circle-o"></i> 最新消息</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-table"></i> <span>課程專區</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/admin/courses"><i class="fa fa-circle-o"></i> 課程專區</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -73,17 +89,15 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/admin/activity"><i class="fa fa-circle-o"></i> 活動專區</a></li>
-                <li><a href="/admin/contact"><i class="fa fa-circle-o"></i> 聯絡我們</a></li>
+                <li><a href="/admin/activitys"><i class="fa fa-circle-o"></i> 活動專區</a></li>
               </ul>
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-table"></i> <span>廠商資訊</span>
+                <i class="fa fa-table"></i> <span>團隊介紹</span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/admin/shop"><i class="fa fa-circle-o"></i> 廠商資訊</a></li>
-                <li><a href="/admin/career"><i class="fa fa-circle-o"></i> 職缺刊登</a></li>
+                <li><a href="/admin/team"><i class="fa fa-circle-o"></i> 團隊介紹</a></li>
               </ul>
             </li>
             <!--
@@ -98,15 +112,7 @@
                 <li><a href="/admin/realprice"><i class="fa fa-circle-o"></i> 實價登入</a></li>
               </ul>
             </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-table"></i> <span>易經內容</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="/admin/bookchange"><i class="fa fa-circle-o"></i> 易經內容</a></li>
-              </ul>
-            </li>
+            
             <li>
               <a href="../calendar.html">
                 <i class="fa fa-calendar"></i> <span>Calendar</span>

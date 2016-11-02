@@ -1,9 +1,11 @@
-@extends('layouts.app')
+@extends('admin.layout') 
+@extends('admin.header') 
+@extends('admin.left_nav') 
 
 @section('content')
     <section class="content-header">
         <h1>
-            News
+            News最新消息
         </h1>
     </section>
     <div class="content">
@@ -21,4 +23,8 @@
             </div>
         </div>
     </div>
+   
 @endsection
+@extends('admin.footer') 
+@extends('admin.sidebar') 
+@extends('admin.script')

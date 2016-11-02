@@ -10,13 +10,9 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-Auth::routes();
 
-Route::group(['middleware' => ['guest']], function () {
+Route::group(['middleware' => ['web']], function () {
     
-    Route::get('/', function () {
-        return view('frontend.index');
-    });
     Route::get('/', function () {
         return view('frontend.index');
     });
@@ -39,9 +35,7 @@ Route::group(['middleware' => ['guest']], function () {
         return view('frontend.faq');
     });
     
-    // ADMIN
-    Route::get('admin/login', 'backend\Auth\LoginController@getLoginForm');
-    Route::post('admin/authenticate', 'backend\Auth\LoginController@authenticate');
+    
     /*
     Route::get('admin/register', 'backend\Auth\RegisterController@getRegisterForm');
     Route::post('admin/saveregister', 'backend\Auth\RegisterController@saveRegisterForm');
@@ -55,29 +49,30 @@ Route::group(['middleware' => ['guest']], function () {
     */
 });
 
-
+/*
 Route::group(['middleware' => ['user']], function () {
-    /*
     Route::post('user/logout', 'frontend\Auth\LoginController@getLogout');
     Route::get('user/dashboard', 'frontend\UserController@dashboard');
-    
     Route::get('user/dashboard1/', function () {
         return view('frontend.dashboard');
     });
-    */
+});
+*/
+
+Route::group(['prefix' => 'admin','middleware' => ['admin']], function () {
+    
+// ADMIN
+    Route::get('login', 'backend\Auth\LoginController@getLoginForm');
+    Route::post('authenticate', 'backend\Auth\LoginController@authenticate');
+    Route::get('dashboard', 'backend\AdminController@dashboard');
+    Route::post('logout', 'backend\Auth\LoginController@getLogout');
+    
+    Route::resource('managers', 'ManagerController');
+    Route::resource('news', 'NewsController');
+    Route::resource('activities', 'activityController');
+    Route::resource('courses', 'CourseController');
+    Route::resource('banners', 'BannerController');
+    Route::resource('team', 'TeamController');
 });
 
-
-
-Route::group(['middleware' => ['admin']], function () {
-    Route::get('admin/dashboard', 'backend\AdminController@dashboard');
-    Route::post('admin/logout', 'backend\Auth\LoginController@getLogout');
-    
-    Route::resource('admin/managers', 'ManagerController');
-    Route::resource('admin/news', 'NewsController');
-    Route::resource('admin/shops', 'backend\shopController');
-    Route::resource('admin/activities', 'activityController');
-    
-});
-
-
+Auth::routes();

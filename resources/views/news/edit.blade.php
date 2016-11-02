@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('admin.layout') 
+@extends('admin.header') 
+@extends('admin.left_nav') 
 
 @section('content')
     <section class="content-header">
@@ -19,5 +21,9 @@
                </div>
            </div>
        </div>
-   </div>
+   </div>  
 @endsection
+
+@extends('admin.footer') 
+@extends('admin.sidebar') 
+@extends('admin.script')
