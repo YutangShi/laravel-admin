@@ -1,8 +1,3 @@
-<!-- Id Field -->
-<div class="form-group">
-    {!! Form::label('id', 'Id:') !!}
-    <p>{!! $banner->id !!}</p>
-</div>
 
 <!-- Picture Field -->
 <div class="form-group">

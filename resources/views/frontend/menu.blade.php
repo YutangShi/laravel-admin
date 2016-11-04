@@ -13,7 +13,9 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse mainmenu" id="bs-example-navbar-collapse-1">
+              <!--
 Han You Chinese Language Institute in Delhi
+-->
               <ul class="nav navbar-nav navbar-right menu_bar">
                 <!--
                 <li class="dropdown">
@@ -28,10 +30,16 @@ Han You Chinese Language Institute in Delhi
                 </li>
                 -->
                  <li><a href="/aboutus">About Us</a></li>
-                 <li><a href="/courses">Courses</a></li>
+                 <li><a href="/staff">The Team</a></li>
+                 <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/courses"><small>Courses</small></a></li>
+                    <li><a href="/Testimonial">Testimonial</a></li>
+                  </ul>
+                </li>
                  <li><a href="/services">Services</a></li>
                  <li><a href="/studyabroad">Study Abroad</a></li>
-                 <li><a href="/staff">The Staff</a></li>
                  <li><a href="/faq">FAQ</a></li>
                  <!---<li><a href="#">Subscribe訂閱</a></li>-->
               </ul>

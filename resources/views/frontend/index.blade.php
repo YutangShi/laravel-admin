@@ -1,94 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/base.css"/>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="css/tablet.css"/>
-    <link rel="stylesheet" type="text/css" href="css/mobile.css"/>
-    
-    <title>漢你中文-Han You Chinese Language Institute in Delhi</title>
-    <link rel="shortcut icon" href="images/favicon.png">
+@extends('frontend.homelayout') 
+@extends('frontend.menu')
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=908066355897581";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-</head>
-<body>
-    <header>
-     <div class="container">
-    	<nav class="navbar navbar-default">
-          	<!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand logo" href="/"><h1>漢你中文 </h1></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse mainmenu" id="bs-example-navbar-collapse-1">
-Han You Chinese Language Institute in Delhi
-              <ul class="nav navbar-nav navbar-right menu_bar">
-                <!--
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="aboutus.php">
-                      <small>About Us</small></a>
-                    </li>
-                    <li><a href="services.php"><small>Services</small></a></li>
-                    <li><a href="photo-gallery.php"><small>Photo Gallary</small></a></li>
-                    <li><a href="news-media.php"><small>News Media</small></a></li>
-                    <li><a href="feedback.php"><small>Feedback</small></a></li>
-                    <li><a href="video-gallery.php"><small>Videos</small></a></li>
-                    <li><a href="hanyou-chinese-faculty.php"><small>Faculty</small></a></li>
-                  </ul>
-                </li>
-                -->
-                 <li><a href="/aboutus">About Us</a></li>
-                 <li><a href="/courses">Courses</a></li>
-                 <li><a href="/services">Services</a></li>
-                 <li><a href="/studyabroad">Study Abroad</a></li>
-                 <li><a href="/staff">The Staff</a></li>
-                 <li><a href="/faq">FAQ</a></li>
-
-                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Classes <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="generalchineseforadults.php">
-                      <small>Adults Classes</small></a>
-                    </li>
-                    <li><a href="kids-classes.php"><small>Kids Classes</small></a></li>
-                    <li><a href="one-to-one-classes.php"><small>One to One Basis</small></a></li>
-                    <li><a href="corporate-sessions.php"><small>Corporate Sessions</small></a></li>
-                    <li><a href="business-chinese-classes-for-adults.php"><small>Business Chinese</small></a></li>
-                  </ul>
-                </li>
-                 <!---<li><a href="#">Subscribe訂閱</a></li>-->
-              </ul>
-            </div><!-- /.navbar-collapse -->
-        </nav>
-      </div><!-- /.container-fluid -->
-    </header>
-    
-    <!--Banner-->
+@section('content')
+<!--Banner-->
     <section class="section1">
         <div class="container">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -287,11 +201,11 @@ I have learned Chinese about one year from Nancy and Cannie. I found myself much
 </div>
         </div>
         <div class="container">
-        	<h4 class="title">Our videos</h4>
+          <h4 class="title">Our videos</h4>
             <div class="row">
                 <div class="col-sm-3 col-xs-6">
                     <div class="box1">
-                    	<figure class="img">
+                      <figure class="img">
                         <div class="fb-video" data-href="https://www.facebook.com/HanYouDelhi/videos/529687013822582/" data-width="265" data-show-text="false"><blockquote cite="https://www.facebook.com/HanYouDelhi/videos/529687013822582/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/HanYouDelhi/videos/529687013822582/">Han You students live in Taiwan Q&amp;A</a><p>Accommodation
 #hanyouchineselanguageinstitute
 #livingintaiwan
@@ -307,7 +221,7 @@ I have learned Chinese about one year from Nancy and Cannie. I found myself much
                 </div>
                 <div class="col-sm-3 col-xs-6">
                     <div class="box1">
-                    	<figure class="img">
+                      <figure class="img">
 <div class="fb-video" data-href="https://www.facebook.com/HanYouDelhi/videos/462599780531306/" data-width="265" data-show-text="false"><blockquote cite="https://www.facebook.com/HanYouDelhi/videos/462599780531306/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/HanYouDelhi/videos/462599780531306/"></a><p>Let&#039;s take a look different type of student accommodation in Taiwan.</p>Posted by <a href="https://www.facebook.com/HanYouDelhi/">Han You Chinese Language Institute Delhi</a> on Thursday, February 4, 2016</blockquote></div>
                       </figure>
                         <h5 class="title">different type of student</h5>
@@ -330,78 +244,6 @@ I have learned Chinese about one year from Nancy and Cannie. I found myself much
         </div>
         
     </section>
-    <section class="footer_menu section5">
-        <div class="container">
-            <div class="row">
-            	<div class="col-sm-9 col-xs-12">
-                    <div class="row">
-                    	<div class="col-sm-3 col-xs-12">
-                      	<div>
-                          	<h4 class="title">Contact us</h4 class="title">
-                              <p>聯絡資訊</p>
-                              <p><span class="glyphicon glyphicon-earphone"></span> 
-                                Tel :91-011-2656 6007  Mob.:+91-9560-484269</p>
-                              <p><span class="glyphicon glyphicon-envelope"></span>
-                              hanyouchinese@gmail.com 
-                              </p>
-                          </div>
-                      </div>
-                      <div class="col-sm-6 col-xs-12">
-                        <div>
-                            <h4 class="title">Service info</h4 class="title">
-                              <p>Address</p>
-                                Office:1st FL.,97/3 Adhchini,aurobindo marg, New delhi-110017,India</p>
-                              <p>Service time</p>
-                              Our Center Open : Tuesday~ Sunday ,10am -6pm Offday : Monday
-                              </p>
-                          </div>
-                      </div>
-                        <div class="col-sm-3 col-xs-12">
-                        	<div>
-                            	<h4 class="title">Links</h4 class="title">
-                                <ul class="list-unstyled">
-                                	<li><a href="https://www.facebook.com/hanyouchinese.delhi "><small>FB</small></a></li>
-                                    <li><a href="https://www.facebook.com/HanYouDelhi"><small>FB fans page</small></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--
-                        <div class="col-sm-3 col-xs-12">
-                        	<div>
-                            	<h4 class="title">Links</h4 class="title">
-                                <ul class="list-unstyled">
-                                	<li><a href="#"><small>印度教育</small></a></li>
-                                    <li><a href="#"><small>華語教</small></a></li>
-                                    <li><a href="#"><small>企業內訓</small></a></li>
-                                    <li><a href="#"><small>留遊學</small></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        -->
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-12">
-                	<div>
-                        <h4 class="title">Facebook</h4 class="title">
-                        <div class="fb-page" data-href="https://www.facebook.com/HanYouDelhi" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/HanYouDelhi" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/HanYouDelhi">Han You Chinese Language Institute Delhi</a></blockquote></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-<div class="fb-comments" data-href="http://www.hanyouchinese.com/" data-width="100%" data-numposts="100"></div>
-        </div>
-    </section>
-
-    <footer>
-
-
-        <div class="container">
-            <h6 class="text-center"> © 2016. Corporate HanYouChinese All rights reserved.</h6>
-        </div>
-    </footer>
-</body>
-</html>
 
 <style type="text/css">
 
@@ -508,3 +350,6 @@ td, th {
     text-align: left;
 }
 </style>
+@stop  
+@extends('frontend.footer_menu') 
+@extends('frontend.footer') 

@@ -15,9 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/tablet.css"/>
     <link rel="stylesheet" type="text/css" href="css/mobile.css"/>
     
-    <title>漢你中文</title>
+    <title>漢你中文-Han You Chinese Language Institute in Delhi</title>
     <link rel="shortcut icon" href="images/favicon.png">
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -25,19 +24,27 @@
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=908066355897581";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
+}(document, 'script', 'facebook-jssdk'));
+</script>
 </head>
 <body>
-  <header>
-    @yield('menu')
-  </header> 
-  @yield('content')
+    <header>
+      @yield('menu')
+    </header> 
+    
+    <section class="section2">
+      @yield('content')
+    </section>
+    <section class="footer_menu section5">
+        <div class="container">
+          @yield('footer_menu')
+        </div>
+        <div class="container">
+<div class="fb-comments" data-href="http://www.hanyouchinese.com/" data-width="100%" data-numposts="100"></div>
+        </div>
+    </section>
 
-  <div class="container">
-    @yield('footer_menu')
-  </div>
-  <footer>
+    <footer>
         @yield('footer')
   </footer>
 

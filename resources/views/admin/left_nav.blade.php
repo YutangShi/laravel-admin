@@ -83,13 +83,14 @@
                 <li><a href="/admin/courses"><i class="fa fa-circle-o"></i> 課程專區</a></li>
               </ul>
             </li>
+
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-table"></i> <span>活動專區</span>
+                <i class="fa fa-table"></i> <span>服務項目</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/admin/activitys"><i class="fa fa-circle-o"></i> 活動專區</a></li>
+                <li><a href="/admin/services"><i class="fa fa-circle-o"></i> 服務項目</a></li>
               </ul>
             </li>
             <li class="treeview">

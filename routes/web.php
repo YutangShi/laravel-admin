@@ -22,48 +22,26 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/courses', function () {
         return view('frontend.courses');
     });
-    Route::get('/services', function () {
-        return view('frontend.services');
-    });
+
+    Route::get('/services', 'IndexController@services');
     Route::get('/studyabroad', function () {
         return view('frontend.studyabroad');
     });
-    Route::get('/staff', function () {
-        return view('frontend.staff');
-    });
+    
+    Route::get('/staff', 'IndexController@staff');
+
     Route::get('/faq', function () {
         return view('frontend.faq');
     });
-    
-    
-    /*
-    Route::get('admin/register', 'backend\Auth\RegisterController@getRegisterForm');
-    Route::post('admin/saveregister', 'backend\Auth\RegisterController@saveRegisterForm');
-    
-    // USER 
-    Route::get('user/login', 'frontend\Auth\LoginController@getLoginForm');
-    Route::post('user/authenticate', 'frontend\Auth\LoginController@authenticate');
-    
-    Route::get('user/register', 'frontend\Auth\RegisterController@getRegisterForm');
-    Route::post('user/saveregister', 'frontend\Auth\RegisterController@saveRegisterForm');
-    */
-});
 
-/*
-Route::group(['middleware' => ['user']], function () {
-    Route::post('user/logout', 'frontend\Auth\LoginController@getLogout');
-    Route::get('user/dashboard', 'frontend\UserController@dashboard');
-    Route::get('user/dashboard1/', function () {
-        return view('frontend.dashboard');
-    });
+    // admin user login path
+    Route::get('admin/login', 'backend\Auth\LoginController@getLoginForm');
+    Route::post('admin/authenticate', 'backend\Auth\LoginController@authenticate');
 });
-*/
 
 Route::group(['prefix' => 'admin','middleware' => ['admin']], function () {
     
-// ADMIN
-    Route::get('login', 'backend\Auth\LoginController@getLoginForm');
-    Route::post('authenticate', 'backend\Auth\LoginController@authenticate');
+    // ADMIN
     Route::get('dashboard', 'backend\AdminController@dashboard');
     Route::post('logout', 'backend\Auth\LoginController@getLogout');
     
@@ -73,6 +51,8 @@ Route::group(['prefix' => 'admin','middleware' => ['admin']], function () {
     Route::resource('courses', 'CourseController');
     Route::resource('banners', 'BannerController');
     Route::resource('team', 'TeamController');
+    Route::resource('services', 'ServiceController');
 });
 
 Auth::routes();
+

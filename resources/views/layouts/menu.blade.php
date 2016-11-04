@@ -26,3 +26,7 @@
     <a href="{!! route('teams.index') !!}"><i class="fa fa-edit"></i><span>Teams</span></a>
 </li>
 
+<li class="{{ Request::is('services*') ? 'active' : '' }}">
+    <a href="{!! route('services.index') !!}"><i class="fa fa-edit"></i><span>Services</span></a>
+</li>
+

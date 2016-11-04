@@ -4,18 +4,16 @@
 
 @section('content')
     <section class="content-header">
-        <h1>
-            團隊介紹
-        </h1>
+        <h1>服務介紹</h1>
    </section>
    <div class="content">
        @include('adminlte-templates::common.errors')
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($team, ['route' => ['team.update', $team->id], 'method' => 'patch']) !!}
+                   {!! Form::model($service, ['route' => ['services.update', $service->id], 'method' => 'patch']) !!}
 
-                        @include('teams.fields')
+                        @include('services.fields')
 
                    {!! Form::close() !!}
                </div>
@@ -23,6 +21,7 @@
        </div>
    </div>
 @endsection
+
 @extends('admin.footer') 
 @extends('admin.sidebar') 
 @extends('admin.script')

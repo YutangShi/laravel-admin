@@ -1,41 +1,40 @@
 <!-- Picture Field -->
-<div class="form-group col-sm-12 col-lg-12">
-    {!! Form::label('picture', 'Picture:') !!}
-    {!! Form::textarea('picture', null, ['class' => 'form-control']) !!}
+<div class="form-group col-sm-6">
+    {!! Form::label('picture', '圖片檔案:') !!}
+    {{ Form::file('picture',null, ['class' => 'form-control']) }}
 </div>
 
 <!-- Title Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('title', 'Title:') !!}
+    {!! Form::label('title', '標題:') !!}
     {!! Form::text('title', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Content Field -->
-<div class="form-group col-sm-12 col-lg-12">
-    {!! Form::label('content', 'Content:') !!}
+<div class="form-group col-sm-6">
+    {!! Form::label('content', '圖片介紹:') !!}
     {!! Form::textarea('content', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Status Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('status', 'Status:') !!}
-    {!! Form::number('status', null, ['class' => 'form-control']) !!}
+    {!! Form::label('status', '狀態:') !!}
+    {{ Form::select('status', [
+       '1' => '開啟',
+       '0' => '關閉',
+       ]
+    ) }}
 </div>
 
 <!-- Rank Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('rank', 'Rank:') !!}
-    {!! Form::number('rank', null, ['class' => 'form-control']) !!}
+    {!! Form::label('rank', '排序:') !!}
+    {!! Form::number('rank', 1, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Current At Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('current_at', 'Current At:') !!}
-    {!! Form::date('current_at', null, ['class' => 'form-control']) !!}
-</div>
 
 <!-- Submit Field -->
-<div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
+<div class="form-group col-sm-6">
+    {!! Form::submit('儲存', ['class' => 'btn btn-primary']) !!}
     <a href="{!! route('banners.index') !!}" class="btn btn-default">Cancel</a>
 </div>

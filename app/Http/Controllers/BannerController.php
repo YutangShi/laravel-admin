@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
+use Input;
 
 class BannerController extends AppBaseController
 {
@@ -55,12 +56,19 @@ class BannerController extends AppBaseController
      */
     public function store(CreateBannerRequest $request)
     {
+        $picture=Input::file('picture');
+        
+        $destinationPath = 'banner';                                       // upload path
+        $extension = $picture->getClientOriginalExtension();    // getting image extension
+        $fileName = rand(11111,99999).'.'.$extension;                       // renameing image
+        $picture->move($destinationPath, $fileName);            // uploading file to given path
+        //echo $fileName."<br/><br/><br/><br/>";
+        
         $input = $request->all();
-
+        $input['picture']=$fileName;
+        
         $banner = $this->bannerRepository->create($input);
-
         Flash::success('Banner saved successfully.');
-
         return redirect(route('banners.index'));
     }
 

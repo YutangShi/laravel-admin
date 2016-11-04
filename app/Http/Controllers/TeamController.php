@@ -43,7 +43,7 @@ class TeamController extends AppBaseController
      */
     public function create()
     {
-        return view('teams.create');
+        return view('team.create');
     }
 
     /**
@@ -61,7 +61,7 @@ class TeamController extends AppBaseController
 
         Flash::success('Team saved successfully.');
 
-        return redirect(route('teams.index'));
+        return redirect(route('team.index'));
     }
 
     /**
@@ -78,7 +78,7 @@ class TeamController extends AppBaseController
         if (empty($team)) {
             Flash::error('Team not found');
 
-            return redirect(route('teams.index'));
+            return redirect(route('team.index'));
         }
 
         return view('teams.show')->with('team', $team);
@@ -98,7 +98,7 @@ class TeamController extends AppBaseController
         if (empty($team)) {
             Flash::error('Team not found');
 
-            return redirect(route('teams.index'));
+            return redirect(route('team.index'));
         }
 
         return view('teams.edit')->with('team', $team);
@@ -119,14 +119,14 @@ class TeamController extends AppBaseController
         if (empty($team)) {
             Flash::error('Team not found');
 
-            return redirect(route('teams.index'));
+            return redirect(route('team.index'));
         }
 
         $team = $this->teamRepository->update($request->all(), $id);
 
         Flash::success('Team updated successfully.');
 
-        return redirect(route('teams.index'));
+        return redirect(route('team.index'));
     }
 
     /**
@@ -143,7 +143,7 @@ class TeamController extends AppBaseController
         if (empty($team)) {
             Flash::error('Team not found');
 
-            return redirect(route('teams.index'));
+            return redirect(route('team.index'));
         }
 
         $this->teamRepository->delete($id);
