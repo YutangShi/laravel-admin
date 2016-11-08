@@ -1,30 +1,14 @@
-<!-- Id Field -->
-<div class="form-group">
-    {!! Form::label('id', 'Id:') !!}
-    <p>{!! $course->id !!}</p>
-</div>
-
-<!-- Typeid Field -->
-<div class="form-group">
-    {!! Form::label('typeid', 'Typeid:') !!}
-    <p>{!! $course->typeid !!}</p>
-</div>
 
 <!-- Title Field -->
 <div class="form-group">
-    {!! Form::label('title', 'Title:') !!}
+    {!! Form::label('title', '標題:') !!}
     <p>{!! $course->title !!}</p>
 </div>
 
-<!-- Filedata Field -->
-<div class="form-group">
-    {!! Form::label('filedata', 'Filedata:') !!}
-    <p>{!! $course->filedata !!}</p>
-</div>
 
 <!-- Content Field -->
 <div class="form-group">
-    {!! Form::label('content', 'Content:') !!}
+    {!! Form::label('content', '內容:') !!}
     <p>{!! $course->content !!}</p>
 </div>
 

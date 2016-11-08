@@ -229,7 +229,11 @@ I have learned Chinese about one year from Nancy and Cannie. I found myself much
                         <p class="tag"><span class="glyphicon glyphicon-tags"></span>accommodation in Taiwan,</p>
                     </div>
                 </div>
-
+                <div class="col-sm-3 col-xs-6">
+                    <div class="box1">
+                      <iframe width="400" height="225" src="https://www.youtube.com/embed/swNrNdvm55s" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
                 <div class="col-sm-3 col-xs-6">
                     <div class="box1">
                       <figure class="img">

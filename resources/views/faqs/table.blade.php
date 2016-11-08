@@ -2,7 +2,7 @@
     <thead>
         <th>編號</th>
         <th>標題</th>
-        <th>內容</th>
+        <th width="200">內容</th>
         <th>排序</th>
         <th colspan="3">Action</th>
     </thead>
@@ -10,7 +10,9 @@
     @foreach($faqs as $faq)
         <tr>
             
+            <td>{!! $faq->id !!}</td>
             <td>{!! $faq->title !!}</td>
+            <td>{!! $faq->content !!}</td>
             <td>{!! $faq->status !!}</td>
             <td>
                 {!! Form::open(['route' => ['faqs.destroy', $faq->id], 'method' => 'delete']) !!}

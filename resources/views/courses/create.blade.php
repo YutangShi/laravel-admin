@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('admin.layout') 
+@extends('admin.header') 
+@extends('admin.left_nav') 
 
 @section('content')
     <section class="content-header">
-        <h1>
-            Course
-        </h1>
+        <h1>Course課程內容</h1>
     </section>
     <div class="content">
         @include('adminlte-templates::common.errors')
@@ -22,3 +22,7 @@
         </div>
     </div>
 @endsection
+
+@extends('admin.footer') 
+@extends('admin.sidebar') 
+@extends('admin.script')
