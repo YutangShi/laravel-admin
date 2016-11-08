@@ -1,9 +1,9 @@
 @section('footer_menu')
 
       <div class="row">
-      	<div class="col-sm-9 col-xs-12">
+      	<div class="col-sm-12 col-xs-12">
               <div class="row">
-              	<div class="col-sm-3 col-xs-12">
+              	<div class="col-sm-4 col-xs-12">
                 	<div>
                     	<h4 class="title">Contact us</h4 class="title">
                         <p>聯絡資訊</p>
@@ -14,7 +14,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xs-12">
+                <div class="col-sm-4 col-xs-12">
                   <div>
                       <h4 class="title">Service info</h4 class="title">
                         <p>Address</p>
@@ -24,43 +24,18 @@
                         </p>
                     </div>
                 </div>
-                  <div class="col-sm-3 col-xs-12">
-                  	<div>
+                  <div class="col-sm-4 col-xs-12">
+                      <!--
                       	<h4 class="title">Links</h4 class="title">
                           <ul class="list-unstyled">
                           	<li><a href="https://www.facebook.com/hanyouchinese.delhi "><small>FB</small></a></li>
                               <li><a href="https://www.facebook.com/HanYouDelhi"><small>FB fans page</small></a></li>
                           </ul>
-                      </div>
+                      -->
+                      <div class="fb-page" data-href="https://www.facebook.com/kidhanyouchinesedelhi/" data-tabs="timeline" data-width="400" data-height="300" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/kidhanyouchinesedelhi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/kidhanyouchinesedelhi/">Han You Chinese Institute 漢你中文</a></blockquote></div>
                   </div>
-                  <!--
-                  <div class="col-sm-3 col-xs-12">
-                  	<div>
-                      	<h4 class="title">Links</h4 class="title">
-                          <ul class="list-unstyled">
-                          	<li><a href="#"><small>印度教育</small></a></li>
-                              <li><a href="#"><small>華語教</small></a></li>
-                              <li><a href="#"><small>企業內訓</small></a></li>
-                              <li><a href="#"><small>留遊學</small></a></li>
-                          </ul>
-                      </div>
-                  </div>
-                  -->
+                  
               </div>
           </div>
-          <!--
-          <div class="col-sm-3 col-xs-12">
-          	<div>
-                  <h4 class="title">Subscribe訂閱</h4 class="title">
-                  <p>填入Email即可訂閱電子報</p>
-                  <form class="form-inline">
-                    <div class="form-group">
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                    </div>
-                    <button type="submit" class="btn btn-default subscribe">訂閱</button>
-                  </form>
-              </div>
-          </div>
-        -->
       </div>
   @stop

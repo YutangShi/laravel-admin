@@ -52,7 +52,6 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/admin/about"><i class="fa fa-circle-o"></i> 關於我們</a></li>
                 <li><a href="/admin/contact"><i class="fa fa-circle-o"></i> 聯絡我們</a></li>
               </ul>
             </li>
@@ -76,6 +75,15 @@
             </li>
             <li class="treeview">
               <a href="#">
+                <i class="fa fa-table"></i> <span>關於我們</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/admin/aboutuses"><i class="fa fa-circle-o"></i> 關於我們</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
                 <i class="fa fa-table"></i> <span>課程專區</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
@@ -95,10 +103,27 @@
             </li>
             <li class="treeview">
               <a href="#">
+                <i class="fa fa-table"></i> <span>遊學專區</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/admin/abroads"><i class="fa fa-circle-o"></i> 遊學專區</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
                 <i class="fa fa-table"></i> <span>團隊介紹</span>
               </a>
               <ul class="treeview-menu">
                 <li><a href="/admin/team"><i class="fa fa-circle-o"></i> 團隊介紹</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-table"></i> <span>FAQ</span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="/admin/faqs"><i class="fa fa-circle-o"></i> FAQ</a></li>
               </ul>
             </li>
             <!--

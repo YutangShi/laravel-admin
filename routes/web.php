@@ -52,7 +52,11 @@ Route::group(['prefix' => 'admin','middleware' => ['admin']], function () {
     Route::resource('banners', 'BannerController');
     Route::resource('team', 'TeamController');
     Route::resource('services', 'ServiceController');
+    Route::resource('abroads', 'AbroadController');
+    Route::resource('faqs', 'FaqController');
+    Route::resource('aboutuses', 'AboutusController');
 });
 
 Auth::routes();
+
 

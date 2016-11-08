@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateTeamRequest;
 use App\Http\Requests\UpdateTeamRequest;
 use App\Repositories\TeamRepository;
+use App\Repositories\ServiceRepository;
+
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
@@ -38,12 +40,19 @@ class IndexController extends AppBaseController
         if (empty($team)) {
             Flash::error('Team not found');
 
-            return redirect(route('team.index'));
+            return redirect(route('/'));
         }
         return view('frontend.staff')->with('team', $team);
     }
 
-    public function services(){
-        return view('frontend.services');
+    public function services(ServiceRepository $serviceRepo){
+        $service = $serviceRepo->findWithoutFail(1);
+
+        if (empty($service)) {
+            Flash::error('Services not found');
+
+            return redirect('/');
+        }
+        return view('frontend.services')->with('services', $service);
     }
 }

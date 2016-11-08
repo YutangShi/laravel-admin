@@ -1,0 +1,29 @@
+
+<!-- Title Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('title', '標題:') !!}
+    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Content Field -->
+<div class="form-group col-sm-12 col-lg-12">
+    {!! Form::label('content', '內容:') !!}
+    {!! Form::textarea('content', null, ['class' => 'form-control']) !!}
+</div>
+
+
+<!-- Status Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('status', '狀態:') !!}
+    {{ Form::select('status', [
+       '1' => '開啟',
+       '0' => '關閉',
+       ]
+    ) }}
+</div>
+
+<!-- Submit Field -->
+<div class="form-group col-sm-12">
+    {!! Form::submit('儲存', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('abroads.index') !!}" class="btn btn-default">取消</a>
+</div>
