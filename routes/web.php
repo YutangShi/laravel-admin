@@ -16,32 +16,21 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/', function () {
         return view('frontend.index');
     });
-    Route::get('/aboutus', function () {
-        return view('frontend.aboutus');
-    });
-    Route::get('/courses', function () {
-        return view('frontend.courses');
-    });
-
-    Route::get('/services', 'IndexController@services');
-    Route::get('/studyabroad', function () {
-        return view('frontend.studyabroad');
-    });
     
+    Route::get('/aboutus', 'IndexController@aboutus');
+    Route::get('/courses', 'IndexController@courses');
+    Route::get('/services', 'IndexController@services');
+
+    Route::get('/studyabroad', 'IndexController@studyabroad');
     Route::get('/staff', 'IndexController@staff');
-
-    Route::get('/faq', function () {
-        return view('frontend.faq');
-    });
-
-    // admin user login path
+    Route::get('/faq', 'IndexController@faq');
+    
     Route::get('admin/login', 'backend\Auth\LoginController@getLoginForm');
     Route::post('admin/authenticate', 'backend\Auth\LoginController@authenticate');
 });
 
 Route::group(['prefix' => 'admin','middleware' => ['admin']], function () {
-    
-    // ADMIN
+ 
     Route::get('dashboard', 'backend\AdminController@dashboard');
     Route::post('logout', 'backend\Auth\LoginController@getLogout');
     
@@ -52,7 +41,6 @@ Route::group(['prefix' => 'admin','middleware' => ['admin']], function () {
     Route::resource('banners', 'BannerController');
     Route::resource('team', 'TeamController');
     Route::resource('services', 'ServiceController');
-    Route::resource('abroads', 'AbroadController');
     Route::resource('faqs', 'FaqController');
     Route::resource('aboutuses', 'AboutusController');
 });

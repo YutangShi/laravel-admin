@@ -46,15 +46,17 @@
                 <li><a href="/admin/managers"><i class="fa fa-circle-o"></i> 管理者</a></li>
               </ul>
             </li>
+            <!--
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-table"></i> <span>網站管理</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="/admin/contact"><i class="fa fa-circle-o"></i> 聯絡我們</a></li>
+                <li><a href="/admin/homeindex"><i class="fa fa-circle-o"></i> 關鍵字設定</a></li>
               </ul>
             </li>
+            -->
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-table"></i> <span>首頁圖檔</span>
@@ -99,15 +101,6 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="/admin/services"><i class="fa fa-circle-o"></i> 服務項目</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-table"></i> <span>遊學專區</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="/admin/abroads"><i class="fa fa-circle-o"></i> 遊學專區</a></li>
               </ul>
             </li>
             <li class="treeview">

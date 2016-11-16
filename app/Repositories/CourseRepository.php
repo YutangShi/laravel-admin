@@ -20,7 +20,9 @@ class CourseRepository extends BaseRepository
         'eng_title',
         'eng_content',
         'status',
-        'rank'
+        'rank',
+        'keywords',
+        'description'
     ];
 
     /**

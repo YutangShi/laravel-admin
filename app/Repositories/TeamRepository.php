@@ -16,6 +16,8 @@ class TeamRepository extends BaseRepository
         'content',
         'status',
         'rank',
+        'keywords',
+        'description',
         'current_at'
     ];
 

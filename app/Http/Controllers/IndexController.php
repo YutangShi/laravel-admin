@@ -6,6 +6,10 @@ use App\Http\Requests\CreateTeamRequest;
 use App\Http\Requests\UpdateTeamRequest;
 use App\Repositories\TeamRepository;
 use App\Repositories\ServiceRepository;
+use App\Repositories\AbroadRepository;
+use App\Repositories\FaqRepository;
+use App\Repositories\AboutusRepository;
+use App\Repositories\CourseRepository;
 
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
@@ -55,4 +59,50 @@ class IndexController extends AppBaseController
         }
         return view('frontend.services')->with('services', $service);
     }
+
+    public function studyabroad(AbroadRepository $abroadRepo){
+        $abroad = $abroadRepo->findWithoutFail(1);
+
+        if (empty($abroad)) {
+            Flash::error('Services not found');
+
+            return redirect('/');
+        }
+        return view('frontend.studyabroad')->with('abroad', $abroad);
+    }
+
+    public function faq(FaqRepository $faqRepo){
+        $faq = $faqRepo->findWithoutFail(1);
+
+        if (empty($faq)) {
+            Flash::error('Services not found');
+
+            return redirect('/');
+        }
+        return view('frontend.faq')->with('faq', $faq);
+    }
+
+    public function aboutus(AboutusRepository $aboutusRepo){
+        $aboutus = $aboutusRepo->findWithoutFail(1);
+
+        if (empty($aboutus)) {
+            Flash::error('Services not found');
+
+            return redirect('/');
+        }
+        return view('frontend.aboutus')->with('aboutus', $aboutus);
+    }
+
+    public function courses(CourseRepository $courseRepo){
+        $course = $courseRepo->findWithoutFail(1);
+
+        if (empty($course)) {
+            Flash::error('Services not found');
+
+            return redirect('/');
+        }
+        return view('frontend.courses')->with('course', $course);
+    }
+
+    
 }

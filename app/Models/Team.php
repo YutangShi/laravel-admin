@@ -29,6 +29,8 @@ class Team extends Model
         'content',
         'status',
         'rank',
+        'keywords',
+        'description',
         'current_at'
     ];
 
@@ -43,7 +45,9 @@ class Team extends Model
         'title' => 'string',
         'content' => 'string',
         'status' => 'integer',
-        'rank' => 'integer'
+        'rank' => 'integer',
+        'keywords' => 'string',
+        'description' => 'string'
     ];
 
     /**

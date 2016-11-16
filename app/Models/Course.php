@@ -33,7 +33,9 @@ class Course extends Model
         'eng_title',
         'eng_content',
         'status',
-        'rank'
+        'rank',
+        'keywords',
+        'description'
     ];
 
     /**
@@ -52,7 +54,9 @@ class Course extends Model
         'eng_title' => 'string',
         'eng_content' => 'string',
         'status' => 'integer',
-        'rank' => 'integer'
+        'rank' => 'integer',
+        'keywords' => 'string',
+        'description' => 'string'
     ];
 
     /**
